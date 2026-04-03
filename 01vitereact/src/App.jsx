@@ -1,7 +1,8 @@
+import Badmos from "./file"
 function App() {
 
   return (
-    <h1>Hello Badmos</h1>
+    <Badmos/>
   )
 }
 
