@@ -1,6 +1,6 @@
 function Badmos(){
     return(
-        <h3>Le bhyi badmosi</h3>
+        <h2>Le bhyi badmosi</h2>
     )
 }
 
