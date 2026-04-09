@@ -28,12 +28,14 @@ function App() {
 
   }, [length, numberAllowed, charAllowed, setPassword])
 
+  // useCallback
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 999);
     window.navigator.clipboard.writeText(password)
   }, [password])
 
+  // useEffect hook
   useEffect(() => {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
